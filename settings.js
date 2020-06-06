@@ -70,7 +70,6 @@ export class Settings {
 
         for (var pack of game.packs.keys()){
             var packReplaced = pack.replace('.','-');
-            console.log(packReplaced+" is replaced pack");
             game.settings.register(mod, packReplaced+'-hidden', {
                 scope: 'world',
                 config: false,
