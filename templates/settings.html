@@ -1,0 +1,16 @@
+<form autocomplete="off" onsubmit="event.preventDefault()">
+    {{#each rules}}
+    <div class="form-group">
+        <label>{{this.name}}</label>
+        {{#if this.value }}
+        <input name="{{this.key}}" type="checkbox" value="{{this.key}}" checked/>
+        {{else}}
+        <input name="{{this.key}}" type="checkbox" value="{{this.key}}" />
+        {{/if}}
+    </div>
+    {{/each}}
+
+    <button type="submit" name="submit">
+        <i class="fas fa-save"></i> Save
+    </button>
+</form>

@@ -1,0 +1,14 @@
+{
+    "name": "compendium-hider",
+    "title": "Compendium Hider",
+    "description": "A simple module to hide compendiums.",
+    "author": "Erceron",
+    "version": "1.0.0",
+    "minimumCoreVersion": "0.6.0",
+    "compatibleCoreVersion":"0.6.0",
+    "esmodules": [
+        "./ch.js"
+      ],
+    "url": "https://github.com/earlSt1/vtt-compendium-hider",
+    "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-hider/master/module.json"
+  }
