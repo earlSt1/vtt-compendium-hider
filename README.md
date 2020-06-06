@@ -7,3 +7,8 @@ To use this module, open the module settings and tick the compendiums you wish t
 ![](./example.png)
 
 This module has taken a lot of inspiration from the Custom CSS module, by Toon324.
+
+## Future
+
+1. Hiding tabs when all compendiums inside are hidden
+2. ???
