@@ -1,14 +1,44 @@
 <form autocomplete="off" onsubmit="event.preventDefault()">
-    {{#each rules}}
-    <div class="form-group">
-        <label>{{this.name}}</label>
-        {{#if this.value }}
-        <input name="{{this.key}}" type="checkbox" value="{{this.key}}" checked/>
-        {{else}}
-        <input name="{{this.key}}" type="checkbox" value="{{this.key}}" />
-        {{/if}}
-    </div>
-    {{/each}}
+<h1 class="module-header">Compendium Hider</h1>
+    <table>
+        {{#each rules}}
+
+            
+            <tr style="border:1px solid #7a7971;">
+            
+                {{# if this.isSubmenu }}
+                    <td style="background:rgba(2,2,2,0.1)">
+                        <div class="form-group" style="padding-left:3px;margin:0px 0;">
+                            <label><strong>{{this.name}}</strong></label>
+                        </div>
+                    </td>
+                    <td style="background:rgba(2,2,2,0.1)">
+                        <div class="form-group" style="margin:0px 0;float:right">
+                            {{#if this.value }}
+                            <input class="ch-{{this.type}}" name="{{this.key}}" type="checkbox" value="{{this.key}}" checked/>
+                            {{else}}
+                            <input class="ch-{{this.type}}" name="{{this.key}}" type="checkbox" value="{{this.key}}" />
+                        
+                        {{/if}}
+                        </div>
+                    </td>
+                {{else}}
+                    <td><div class="form-group" style="padding-left:3px;margin:0px 0;"><label>{{this.name}}</label></div></td>
+                    <td><div class="form-group" style="margin:0px 0;float:right">{{#if this.value }}
+                        <input class="ch-{{this.type}}" name="{{this.key}}" type="checkbox" data-submenu="{{this.submenu}}" value="{{this.key}}" checked/>
+                    {{else}}
+                        <input class="ch-{{this.type}}" name="{{this.key}}" type="checkbox" data-submenu="{{this.submenu}}" value="{{this.key}}" />
+                    
+                    {{/if}}
+                    </div>
+                    </td>
+                {{/if}}
+                 
+            </tr>
+           
+        {{/each}}
+    </table>
+    
 
     <button type="submit" name="submit">
         <i class="fas fa-save"></i> Save
