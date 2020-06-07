@@ -10,5 +10,6 @@
         "./ch.js"
       ],
     "url": "https://github.com/earlSt1/vtt-compendium-hider",
-    "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-hider/master/module.json"
+    "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-hider/master/module.json",
+    "download": "https://github.com/earlSt1/vtt-compendium-hider/archive/master.zip"
   }
