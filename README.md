@@ -10,5 +10,5 @@ This module has taken a lot of inspiration from the Custom CSS module, by Toon32
 
 ## Future
 
-1. Hiding tabs when all compendiums inside are hidden
-2. ???
+1. ~~Hiding tabs when all compendiums inside are hidden~~
+2. Removing compendiums for sources like Compendium Browser
