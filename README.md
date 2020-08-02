@@ -1,3 +1,5 @@
+*This module has been superseded by my [Compendium Folders](https://github.com/earlSt1/vtt-compendium-folders) module. Using this you can hide compendiums by removing them from folders.* 
+
 # Compendium Hider
 
 This is a small module for FoundryVTT that allows you to hide compendiums you are not using.
